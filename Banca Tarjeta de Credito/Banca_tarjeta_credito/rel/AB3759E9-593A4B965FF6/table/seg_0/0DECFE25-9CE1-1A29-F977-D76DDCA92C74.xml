@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DECFE25-9CE1-1A29-F977-D76DDCA92C74" name="Persona">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:42:11 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoPersona" id="01E2C05A-44DE-02FB-1A74-B0DE26F83C4B">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pNombre" id="F5616DE2-2853-1747-C17C-561E07EA6162">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sNombre" id="5CC80791-06CF-31BF-A371-4405331F79C6">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pApellido" id="76101BB3-C5CC-57C4-F6E0-FF2B8929D779">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sApellido" id="96110F1D-3592-0B5F-199E-5C1220BD234D">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="32B7A057-E6D0-8695-0E6B-988952BE8625">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correoElectronico" id="2766A72B-66AF-949B-7271-C7DF760B0299">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1101510-BD15-E495-B8B2-C2774FBC8B8A" name="Persona_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01E2C05A-44DE-02FB-1A74-B0DE26F83C4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

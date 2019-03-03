@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF9B09F7-883F-1289-1C09-32E090FFCA40" containerWithKeyObject="DE94260C-952D-2A66-FC8F-9635D222BA68" localFKIndex="1BFDB7FE-86C6-57E5-4E55-E770273E5B11" name="PagosCorte_Moneda_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:57:00 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<referredTableLongName>Moneda</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A13BCF49-0337-9255-11B8-AE7B9D0B9FCD</referredTableID>
+<keyObject>A5AD1408-E32B-81E8-9C91-C212B06B15ED</keyObject>
+<referredKeyID>A5AD1408-E32B-81E8-9C91-C212B06B15ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoMoneda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

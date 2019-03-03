@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C0FE7F2-E7CE-AE88-4E28-D44EBD3BC2BE" containerWithKeyObject="3AAAE510-DAC9-2F93-CE3C-23D49FCE1873" localFKIndex="17BE23FD-663D-89A8-A003-606A216CCD45" name="Movimientos_TipoMovimiento_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:49 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<referredTableLongName>TipoMovimiento</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AFC572B3-4388-A4D6-B807-3D3C2C80AE96</referredTableID>
+<keyObject>18E2550E-550E-96E2-A06B-D6108AE6B83A</keyObject>
+<referredKeyID>18E2550E-550E-96E2-A06B-D6108AE6B83A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoTipoMov</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
