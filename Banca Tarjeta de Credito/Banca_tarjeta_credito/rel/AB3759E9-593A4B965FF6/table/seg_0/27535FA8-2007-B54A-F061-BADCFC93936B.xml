@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27535FA8-2007-B54A-F061-BADCFC93936B" name="RubroTarjeta">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:37 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rubro_rubroId" id="22AD3BF7-E347-F67E-A70B-8A73ED9E1D88">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:51 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E1C5AD0-BB24-D7DE-1438-16BCDE88473E" referredColumn="0918E604-7EF5-3CE0-DF02-C7A540AEA05B"/>
+</associations>
+</Column>
+<Column name="TarjetaCredito_codigoTarjeta" id="8F67B75F-7E46-6094-6561-81214F5AE099">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:58 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33E9ED3A-A0AD-4F2B-8305-04CE209852AE" referredColumn="20F34E18-B8CA-7EBC-AE29-469358E37E69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="039A0056-3F4F-C4EB-FFFA-48D3C3AC8752" name="RubroTarjeta_Rubro_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:51 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AD3BF7-E347-F67E-A70B-8A73ED9E1D88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="939008F6-1D84-D264-828B-D009D9B74310" name="RubroTarjeta_TarjetaCredito_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:58 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F67B75F-7E46-6094-6561-81214F5AE099"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

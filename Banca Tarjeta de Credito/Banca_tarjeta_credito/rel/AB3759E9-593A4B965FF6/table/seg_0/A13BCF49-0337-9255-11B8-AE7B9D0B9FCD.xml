@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A13BCF49-0337-9255-11B8-AE7B9D0B9FCD" name="Moneda">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:56:23 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoMoneda" id="40DD4817-2FF6-067D-0EEF-2B226612E5F3">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:56:48 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="3A37DEE0-9FDD-54AD-2F6C-F3F6EFC262D8">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:56:48 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5AD1408-E32B-81E8-9C91-C212B06B15ED" name="Moneda_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:56:58 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40DD4817-2FF6-067D-0EEF-2B226612E5F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3AAAE510-DAC9-2F93-CE3C-23D49FCE1873" name="Movimientos">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:52:36 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoMovimiento" id="E2A67DF4-074A-9E8C-6A01-4E8AF214C0F2">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:20 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaRegistro" id="7260189D-13B7-0660-517D-ED248C9A3F2E">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:20 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="FF12FD60-AA16-9A85-A068-E47E028ED89E">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:37 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TarjetaCredito_codigoTarjeta" id="8F684226-A85B-24ED-6E55-9C3AEA272720">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:56 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DB390A3-AEAB-5E93-AD7B-BDBE1B4B43AC" referredColumn="20F34E18-B8CA-7EBC-AE29-469358E37E69"/>
+</associations>
+</Column>
+<Column name="Corte_codigoCorte" id="3BD483D1-7BB4-295E-CB1D-0D3583EED6B8">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:55:40 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA4B5680-2772-D60B-EAAA-EDCE7C859818" referredColumn="C0BFD2DF-04CD-7690-DC64-CB1F71304226"/>
+</associations>
+</Column>
+<Column name="TipoMovimiento_codigoTipoMov" id="0D99A7F5-32E3-2D3F-ED23-D0F1002D218E">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:49 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C0FE7F2-E7CE-AE88-4E28-D44EBD3BC2BE" referredColumn="60AEA00C-5DB0-3E39-7FFF-C062F2A15C14"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EC56B50-A336-A37B-D4EA-BFCF87ADDA4B" name="Movimientos_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:20 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2A67DF4-074A-9E8C-6A01-4E8AF214C0F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7026113-A06B-1C3B-7D51-ECCAD097A809" name="Movimientos_TarjetaCredito_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:53:56 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F684226-A85B-24ED-6E55-9C3AEA272720"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC93A460-4466-35DB-F236-F7A9E06FC05B" name="Movimientos_Corte_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:55:40 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BD483D1-7BB4-295E-CB1D-0D3583EED6B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17BE23FD-663D-89A8-A003-606A216CCD45" name="Movimientos_TipoMovimiento_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:49 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D99A7F5-32E3-2D3F-ED23-D0F1002D218E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

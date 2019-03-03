@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8EB40906-1439-91C6-9877-07C29488660D" containerWithKeyObject="5EFC1CEA-B05C-6F1B-8302-EA4533940F68" localFKIndex="4FDD62AE-B936-9C5D-0E7C-7503CD31A4C1" name="Referencia_Persona_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:05:26 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0DECFE25-9CE1-1A29-F977-D76DDCA92C74</referredTableID>
+<keyObject>A1101510-BD15-E495-B8B2-C2774FBC8B8A</keyObject>
+<referredKeyID>A1101510-BD15-E495-B8B2-C2774FBC8B8A</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

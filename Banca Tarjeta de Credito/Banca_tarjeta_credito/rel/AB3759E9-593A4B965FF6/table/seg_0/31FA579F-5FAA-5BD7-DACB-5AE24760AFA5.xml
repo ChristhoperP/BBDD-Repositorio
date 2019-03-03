@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31FA579F-5FAA-5BD7-DACB-5AE24760AFA5" name="ReferenciaCliente">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:47:22 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoReferencia" id="2B48CBF1-34F7-A327-6918-CF40F7BF2D04">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:47:55 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="755BE978-646D-39E3-9FBF-33EB3BC0FD1B">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:48:18 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoReferencia_codigoTipoRef" id="1A7254CA-C515-9A16-BB4C-2A55F4F200D5">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69DCB912-3EEA-222B-55C2-DD1B11DA6600" referredColumn="7F78D0B3-1369-E7E2-B88C-733C401C4AC3"/>
+</associations>
+</Column>
+<Column name="Cliente_codigoCliente" id="BDCB8346-6E8C-FD80-2A4F-DDCC036782BF">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:11 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F02E2873-96D3-D5DA-7FA5-9FC19F352CED" referredColumn="18CB1E61-AA5B-04E1-CF64-8026CD1F5098"/>
+</associations>
+</Column>
+<Column name="Referencia_ReferenciaId" id="525CBBF2-C332-5B04-8307-CDA35D13B776">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:06:20 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<use>0</use>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8797DA04-4C98-2313-B002-212623122D01" referredColumn="5BDC1EF1-DAE8-7E56-19A4-883D5E25B514"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="490E6120-AA9E-CEB6-1618-F2DB3DF3AE7F" name="Referencias_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:47:55 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B48CBF1-34F7-A327-6918-CF40F7BF2D04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4870393C-7DF2-1312-12E3-5CDC7E85A883" name="Referencias_TipoReferencia_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A7254CA-C515-9A16-BB4C-2A55F4F200D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E32528D-724C-BEA8-1061-A1119E55A909" name="Referencias_Cliente_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:11 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDCB8346-6E8C-FD80-2A4F-DDCC036782BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA17B60B-6D20-7063-31BA-B9AF37D4F108" name="Referencias_Referencia_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:06:20 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="525CBBF2-C332-5B04-8307-CDA35D13B776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

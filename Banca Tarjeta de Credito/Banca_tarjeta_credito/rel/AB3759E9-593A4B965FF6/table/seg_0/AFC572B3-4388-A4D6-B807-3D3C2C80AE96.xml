@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFC572B3-4388-A4D6-B807-3D3C2C80AE96" name="TipoMovimiento">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:14 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoTipoMov" id="60AEA00C-5DB0-3E39-7FFF-C062F2A15C14">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:41 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="B15FD4EB-98D3-E759-49A3-5FD9D8F4A1E8">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:41 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="1AA620BD-EF00-05E5-ED1A-FB6CD3046B97">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:18:38 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18E2550E-550E-96E2-A06B-D6108AE6B83A" name="TipoMovimiento_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-28 12:59:46 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60AEA00C-5DB0-3E39-7FFF-C062F2A15C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

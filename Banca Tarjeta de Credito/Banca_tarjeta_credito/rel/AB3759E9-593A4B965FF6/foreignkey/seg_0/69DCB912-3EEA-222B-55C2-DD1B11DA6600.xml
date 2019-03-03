@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="69DCB912-3EEA-222B-55C2-DD1B11DA6600" containerWithKeyObject="31FA579F-5FAA-5BD7-DACB-5AE24760AFA5" localFKIndex="4870393C-7DF2-1312-12E3-5CDC7E85A883" name="Referencias_TipoReferencia_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<referredTableLongName>TipoReferencia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C4BA97E8-B0B7-A0B6-9F53-D471BD2E4EDD</referredTableID>
+<keyObject>63300A90-F212-DD4A-CDFB-A8D0025F58EB</keyObject>
+<referredKeyID>63300A90-F212-DD4A-CDFB-A8D0025F58EB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigoTipoRef</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

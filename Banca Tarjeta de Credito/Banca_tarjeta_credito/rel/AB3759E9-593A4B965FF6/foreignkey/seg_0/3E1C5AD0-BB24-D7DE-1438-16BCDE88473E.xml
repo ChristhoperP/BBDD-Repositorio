@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E1C5AD0-BB24-D7DE-1438-16BCDE88473E" containerWithKeyObject="27535FA8-2007-B54A-F061-BADCFC93936B" localFKIndex="039A0056-3F4F-C4EB-FFFA-48D3C3AC8752" name="RubroTarjeta_Rubro_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:11:51 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BB881852-0636-8CCA-5714-4A57AAE05C62</referredTableID>
+<keyObject>CDCB9044-9A56-E0C4-8ABD-A03B1DD8DF15</keyObject>
+<referredKeyID>CDCB9044-9A56-E0C4-8ABD-A03B1DD8DF15</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
