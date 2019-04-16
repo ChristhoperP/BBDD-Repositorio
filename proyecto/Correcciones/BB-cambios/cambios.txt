@@ -3,3 +3,6 @@
 ->Se hace unica el atributo identidad de persona.
 ->se le agregan 3 insert de paises
 ->Establecer la contraseña como text
+->Inserts de tipoclase
+->Inserts para completar 15 paises
+->Inserts de prueba Aeropuerto,terminal,puerta
