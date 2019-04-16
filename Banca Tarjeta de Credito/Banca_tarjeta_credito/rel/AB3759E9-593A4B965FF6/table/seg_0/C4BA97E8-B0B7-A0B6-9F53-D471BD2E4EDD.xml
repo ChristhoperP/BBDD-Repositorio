@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4BA97E8-B0B7-A0B6-9F53-D471BD2E4EDD" name="TipoReferencia">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:48:26 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoTipoRef" id="7F78D0B3-1369-E7E2-B88C-733C401C4AC3">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:48:56 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="D1DBF577-B6D0-5C37-1952-F5D489C1884C">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:48:56 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63300A90-F212-DD4A-CDFB-A8D0025F58EB" name="TipoReferencia_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:48:56 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F78D0B3-1369-E7E2-B88C-733C401C4AC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

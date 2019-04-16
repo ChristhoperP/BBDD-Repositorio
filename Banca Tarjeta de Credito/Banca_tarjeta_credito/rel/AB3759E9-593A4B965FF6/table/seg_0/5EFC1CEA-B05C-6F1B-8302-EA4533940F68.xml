@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EFC1CEA-B05C-6F1B-8302-EA4533940F68" name="Referencia">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:04:29 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Persona_codigoPersona" id="02A90215-B857-E4EC-F7B6-5EBFEBCC6133">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:05:26 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EB40906-1439-91C6-9877-07C29488660D" referredColumn="01E2C05A-44DE-02FB-1A74-B0DE26F83C4B"/>
+</associations>
+</Column>
+<Column name="ReferenciaId" id="5BDC1EF1-DAE8-7E56-19A4-883D5E25B514">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:05:42 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70CD3BD0-90B2-FAFE-61D1-01827CD98AC5" name="Referencia_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:06:09 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BDC1EF1-DAE8-7E56-19A4-883D5E25B514"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FDD62AE-B936-9C5D-0E7C-7503CD31A4C1" name="Referencia_Persona_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-10-11 14:05:26 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02A90215-B857-E4EC-F7B6-5EBFEBCC6133"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

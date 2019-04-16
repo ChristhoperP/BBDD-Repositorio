@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pg_conexion</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+
+<body class="text-center">
+
+    <div class="row my-3">
+        <div class="col-12 text-center">
+            <h1>Este es el encabezado de la página.</h1>
+        </div>
+    </div>
+
+    <form id="form-registro" class="m-auto" style="width: 300px;">
+        <h1 class="h3 mb-3 font-weight-normal">Ingrese los datos de registro</h1>
+        <input type="number" name="idcliente" class="form-control" placeholder="idcliente" required autofocus>
+        <input type="text" name="nombre" class="form-control" placeholder="nombre" required autofocus>
+        <input type="text" name="direccion" class="form-control" placeholder="direccion" required>
+        <input type="text" name="telefono" class="form-control" placeholder="telefono" required>
+
+        <button id="boton-registro" class="btn btn-lg btn-primary btn-block" type="button">Registrar</button>
+    </form>
+
+    <h2 id="exito" class="text-success d-none">Registro exitoso!</h2>
+    <h2 id="fallo" class="text-danger">Registro fallido!</h2>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+
+</html>

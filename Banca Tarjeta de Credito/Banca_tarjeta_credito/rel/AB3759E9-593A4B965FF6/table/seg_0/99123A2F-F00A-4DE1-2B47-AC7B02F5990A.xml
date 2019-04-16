@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99123A2F-F00A-4DE1-2B47-AC7B02F5990A" name="TarjetaCredito">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:49:31 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoTarjeta" id="20F34E18-B8CA-7EBC-AE29-469358E37E69">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:51:34 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaEntrega" id="FE1E2FF5-24BF-1CB7-A4B7-57A17FBB952C">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:51:34 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numeroTarjeta" id="EFDC1D9B-B537-B662-E114-43A47607C710">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:51:34 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoTarjeta_codigoTipoTarjeta" id="E4D5A40C-3789-4CB9-85DC-51B0CBACF416">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:52:14 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1921F705-1CED-E28E-8916-FF7ECF331E89" referredColumn="44DAD305-6EFE-0F96-B25D-568FF2F0B4F1"/>
+</associations>
+</Column>
+<Column name="Cliente_codigoCliente" id="4C4FCD4C-27C9-C2C7-EA08-F7140C6D0BB6">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:52:22 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="170F5A0E-E6DE-ECD5-F342-55167C337FA9" referredColumn="18CB1E61-AA5B-04E1-CF64-8026CD1F5098"/>
+</associations>
+</Column>
+<Column name="diaPago" id="5456755F-6F7E-FEE0-8BC6-1D3A3E4E6B96">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:56:25 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D45EC718-ABF2-CAF2-643D-D11C7B7228B6" name="TarjetaCredito_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:51:34 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20F34E18-B8CA-7EBC-AE29-469358E37E69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04096CEA-63FF-D4CD-D241-584102B41FA5" name="TarjetaCredito_TipoTarjeta_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:52:14 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4D5A40C-3789-4CB9-85DC-51B0CBACF416"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C707AAA5-3080-2AAA-65AF-FD0AAAC64A08" name="TarjetaCredito_Cliente_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:52:22 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C4FCD4C-27C9-C2C7-EA08-F7140C6D0BB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

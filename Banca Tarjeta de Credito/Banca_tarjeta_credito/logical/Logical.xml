@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="340CD054-12F6-FC2A-E320-08A8911F1F39" mainViewID="6805BC93-9D04-8BB4-FB1C-8E9A4B9ABE9F">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:40:53 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

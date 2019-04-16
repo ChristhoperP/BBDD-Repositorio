@@ -1,0 +1,5 @@
+->Se elimina el schema aerolinea
+->Se añade la comlumna password a la tabla cliente.
+->Se hace unica el atributo identidad de persona.
+->se le agregan 3 insert de paises
+->Establecer la contraseña como text

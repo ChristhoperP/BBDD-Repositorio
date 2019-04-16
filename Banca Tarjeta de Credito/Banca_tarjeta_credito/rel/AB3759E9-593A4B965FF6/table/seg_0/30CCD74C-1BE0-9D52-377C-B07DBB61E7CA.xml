@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30CCD74C-1BE0-9D52-377C-B07DBB61E7CA" name="Cliente">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:45:29 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigoCliente" id="18CB1E61-AA5B-04E1-CF64-8026CD1F5098">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:46:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaRegistro" id="0C85461A-F48C-56D7-EA91-A8A017BB4A2A">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:46:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Persona_codigoPersona" id="FB517073-A3B2-5BB5-0D98-647F3EF938A4">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:46:07 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90E416B3-4185-A6E5-6613-C73F5D648BA3" referredColumn="01E2C05A-44DE-02FB-1A74-B0DE26F83C4B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="658F942D-0BE5-0A41-0EEA-87BF404EE056" name="Cliente_PK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:46:02 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18CB1E61-AA5B-04E1-CF64-8026CD1F5098"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1518669-6F36-A23F-8F34-23E9D5AD35B0" name="Cliente_Persona_FK">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:46:07 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB517073-A3B2-5BB5-0D98-647F3EF938A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

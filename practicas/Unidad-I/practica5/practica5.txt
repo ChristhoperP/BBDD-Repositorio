@@ -1,0 +1,22 @@
+Entidades:
+    Sugeridas:
+    Persona
+    Estudiante
+    Profesor
+    Telefono
+    Seccion
+    PeriodoAcademico
+    Asignatura
+    PlanEstudio
+    Carrera
+
+    Propias:
+    ProgramacionAcademica
+    Calificaciones
+    PublicacionCalificacion
+    
+    Matricula
+    Observacion
+    Requisitos
+    Edificio
+    Aula

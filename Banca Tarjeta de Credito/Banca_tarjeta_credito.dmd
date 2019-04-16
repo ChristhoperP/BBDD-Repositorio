@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Banca_tarjeta_credito" id="A378B290-E65B-30A9-A9A6-A1EA97FE4B38" version="3.5">
+<createdBy>UNAH</createdBy>
+<createdTime>2018-02-27 18:40:53 UTC</createdTime>
+<ownerDesignName>Banca_tarjeta_credito</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A378B290-E65B-30A9-A9A6-A1EA97FE4B38</designId>
+</OSDM_Design>
