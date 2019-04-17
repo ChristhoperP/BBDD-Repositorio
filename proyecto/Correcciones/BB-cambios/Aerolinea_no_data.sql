@@ -18,6 +18,42 @@ CREATE TABLE IF NOT EXISTS Pais (
   (2,'Mexico','MEX');
   INSERT INTO pais (idPais, nombre, nombreCorto) VALUES
   (3,'Costa Rica','CRI');
+  INSERT INTO public.pais(
+	idpais, nombre, nombrecorto)
+	VALUES (4, 'Estados Unidos de América', 'USA');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (5, 'España', 'ESP');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (6, 'El Salvador', 'SLV');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (7, 'Francia', 'FRA');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (8, 'Guatemala', 'GTM');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (9, 'Israel', 'ISR');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (10, 'Italia', 'ITA');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (11, 'Japón', 'JPN');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (12, 'Nicaragua', 'NIC');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (13, 'Panamá', 'PAN');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (14, 'Venezuela', 'VEN');
+  INSERT INTO public.pais(
+  idpais, nombre, nombrecorto)
+  VALUES (15, 'Cuba', 'CUB');
 
 -- -----------------------------------------------------
 -- Table Persona
@@ -79,6 +115,16 @@ CREATE TABLE IF NOT EXISTS Fabricante (
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idFabricante PRIMARY KEY (idFabricante));
 
+insert into Fabricante (idFabricante, descripcion) values (1, 'Infiniti');
+insert into Fabricante (idFabricante, descripcion) values (2, 'Mercedes-Benz');
+insert into Fabricante (idFabricante, descripcion) values (3, 'Jeep');
+insert into Fabricante (idFabricante, descripcion) values (4, 'Mazda');
+insert into Fabricante (idFabricante, descripcion) values (5, 'Kia');
+insert into Fabricante (idFabricante, descripcion) values (6, 'Saab');
+insert into Fabricante (idFabricante, descripcion) values (7, 'Suzuki');
+insert into Fabricante (idFabricante, descripcion) values (8, 'Acura');
+insert into Fabricante (idFabricante, descripcion) values (9, 'Pontiac');
+insert into Fabricante (idFabricante, descripcion) values (10, 'Mazda');
 
 
 
@@ -97,7 +143,16 @@ CREATE TABLE IF NOT EXISTS Modelo (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (1, 'R-Class', '2010-07-12', 1);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (2, 'Mazda6', '1998-02-28', 2);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (3, 'Talon', '2000-11-28', 3);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (4, 'Caravan', '1998-02-22', 4);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (5, 'Legend', '1998-05-28', 5);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (6, 'FX', '1998-03-13', 6);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (7, 'Land Cruiser', '2003-05-15', 7);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (8, 'SC', '2003-06-05', 8);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (9, 'Grand Prix', '1998-04-22', 9);
+insert into Modelo (idModelo, descripcion, fechaFabricacion, Fabricante_idFabricante) values (10, 'Mazda6', '2010-01-15', 10);
 
 -- -----------------------------------------------------
 -- Table Avion
@@ -117,7 +172,16 @@ CREATE TABLE IF NOT EXISTS Avion (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (1, 'ak-171', 45, 'A320', 3707, 1);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (2, 'co-057', 52, 'Boeing 747', 2130, 2);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (3, 'nh-809', 59, 'Boeing 777', 241, 3);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (4, 'kl-104', 66, 'Boeing 737', 4358, 4);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (5, 'rb-178', 73, 'MAX 737', 2248, 5);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (6, 'ry-324', 49, 'Boeing 787 Dreamliner', 4232, 6);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (7, 'tl-423', 56, 'Boeing 757', 3301, 7);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (8, 'wn-368', 63, 'A320', 781, 8);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (9, 'nz-043', 70, 'Boeing 707', 4790, 9);
+insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (10, 'wf-100', 46, 'A380', 3139, 10);
 
 
 -- -----------------------------------------------------
@@ -160,6 +224,15 @@ CREATE TABLE IF NOT EXISTS TipoClase (
   numeroMaletaPermitida INT NULL,
   CONSTRAINT pk_idTipoClase PRIMARY KEY (idTipoClase));
 
+INSERT INTO public.tipoclase(
+	idtipoclase, descripcion, numeromaletapermitida)
+	VALUES (1, 'Primera Clase', 3);
+INSERT INTO public.tipoclase(
+	idtipoclase, descripcion, numeromaletapermitida)
+	VALUES (2, 'Ejecutiva', 2);
+INSERT INTO public.tipoclase(
+	idtipoclase, descripcion, numeromaletapermitida)
+	VALUES (3, 'Turista', 1);
 
 -- -----------------------------------------------------
 -- Table Aeropuerto
@@ -175,6 +248,25 @@ CREATE TABLE IF NOT EXISTS Aeropuerto (
     REFERENCES Pais (idPais)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (1, 'none', 'Toncontin', 1);
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (2, 'none', 'La Ceiba', 1);
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (3, 'none', 'Azteca', 2);
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (4, 'none', 'Mexico', 2);
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (5, 'none', 'Tico', 3);
+INSERT INTO public.aeropuerto(
+idaeropuerto, codigoInterno, nombre, Pais_idPais)
+VALUES (6, 'none', 'Keylor', 3);
 
 
 -- -----------------------------------------------------
@@ -192,7 +284,42 @@ CREATE TABLE IF NOT EXISTS Terminal (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (1, 'none', 'Terminal01', 1);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (2, 'none', 'Terminal02', 1);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (3, 'none', 'Terminal01', 2);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (4, 'none', 'Terminal02', 2);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (5, 'none', 'Terminal01', 3);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (6, 'none', 'Terminal02', 3);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (7, 'none', 'Terminal01', 4);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (8, 'none', 'Terminal02', 4);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (9, 'none', 'Terminal01', 5);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (10, 'none', 'Terminal02', 5);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (11, 'none', 'Terminal01', 6);
+INSERT INTO public.terminal(
+idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto)
+VALUES (12, 'none', 'Terminal02', 6);
 
 -- -----------------------------------------------------
 -- Table Puerta
@@ -208,6 +335,78 @@ CREATE TABLE IF NOT EXISTS Puerta (
     REFERENCES Terminal (idTerminal)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (1, 'none', 'Puerta01', 1);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (2, 'none', 'Puerta02', 1);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (3, 'none', 'Puerta01', 2);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (4, 'none', 'Puerta02', 2);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (5, 'none', 'Puerta01', 3);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (6, 'none', 'Puerta02', 3);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (7, 'none', 'Puerta01', 4);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (8, 'none', 'Puerta02', 4);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (9, 'none', 'Puerta01', 5);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (10, 'none', 'Puerta02', 5);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (11, 'none', 'Puerta01', 6);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (12, 'none', 'Puerta02', 6);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (13, 'none', 'Puerta01', 7);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (14, 'none', 'Puerta02', 7);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (15, 'none', 'Puerta01', 8);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (16, 'none', 'Puerta02', 8);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (17, 'none', 'Puerta01', 9);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (18, 'none', 'Puerta02', 9);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (19, 'none', 'Puerta01', 10);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (20, 'none', 'Puerta02', 10);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (21, 'none', 'Puerta01', 11);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (22, 'none', 'Puerta02', 11);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (23, 'none', 'Puerta01', 12);
+INSERT INTO public.puerta(
+idpuerta, codigopuerta, nombre, terminal_idterminal)
+VALUES (24, 'none', 'Puerta02', 12);
 
 -- -----------------------------------------------------
 -- Table Vuelo

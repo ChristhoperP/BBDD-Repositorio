@@ -1,0 +1,44 @@
+Factura:
+	nombre-cliente:y
+	direccion:y
+	forma-pago:credito, efectivo,cheque...y
+	fecha:y
+	
+Productos:
+	cantidad:y
+	nombre-producto:y
+	precio:y
+	subtotal:cantidad por precio ...?
+Recargos:
+	detalle: y
+	subtotal: ??
+Parte-Inferior:
+	total:antes de impuesto y descuento:??
+	el/los descuento(s) con su respectivos calculos:??
+	total:después de impuestos y descuentos:??
+	observaciones:y
+
+->una factura puede tener 0 o varios descuentos e impuestos
+->el total de la factura no sea un atributo derivado.
+
+Modelo E-R
+ENtidades:
+	cliente:
+		nombre-cliente
+		direccion
+	forma-pago:
+		descripcion
+	producto
+		nombre-producto
+		precio
+	recargo:
+		detalle
+	Impuesto:
+		detalle
+	Descuento:
+		detalle
+	factura:
+		total1
+		total2
+		observaciones
+		
