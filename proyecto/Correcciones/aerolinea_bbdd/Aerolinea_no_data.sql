@@ -2,22 +2,20 @@
 -- Sat Mar 23 23:05:09 2019
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
-
-create schema aerolinea
-
+ 
 -- -----------------------------------------------------
--- Table aerolinea.Pais
+-- Table Pais
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Pais (
+CREATE TABLE IF NOT EXISTS Pais (
   idPais INT NOT NULL,
   nombre VARCHAR(45) NULL,
   nombreCorto VARCHAR(45) NULL,
   CONSTRAINT pk_idpais PRIMARY KEY (idPais));
 
 -- -----------------------------------------------------
--- Table aerolinea.Persona
+-- Table Persona
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Persona (
+CREATE TABLE IF NOT EXISTS Persona (
   idPersona INT NOT NULL,
   pNombre VARCHAR(45) NULL,
   sNombre VARCHAR(45) NULL,
@@ -31,14 +29,14 @@ CREATE TABLE IF NOT EXISTS aerolinea.Persona (
   UNIQUE (numeroIdentidad),
   CONSTRAINT fk_Persona_Pais1
     FOREIGN KEY (Pais_idPais)
-    REFERENCES aerolinea.Pais (idPais)
+    REFERENCES Pais (idPais)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
--- Table aerolinea.Telefono
+-- Table Telefono
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Telefono (
+CREATE TABLE IF NOT EXISTS Telefono (
   idTelefono INT NOT NULL,
   numeroTelefono VARCHAR(45) NULL,
   estado VARCHAR(45) NULL,
@@ -46,29 +44,29 @@ CREATE TABLE IF NOT EXISTS aerolinea.Telefono (
   CONSTRAINT pk_idTelefono PRIMARY KEY (idTelefono),
   CONSTRAINT fk_telefono_persona
     FOREIGN KEY (persona_idpersona)
-    REFERENCES aerolinea.Persona (idPersona)
+    REFERENCES Persona (idPersona)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
--- Table aerolinea.Pasajero
+-- Table Pasajero
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Pasajero (
+CREATE TABLE IF NOT EXISTS Pasajero (
   idPasajero INT NOT NULL,
   fechaRegistro DATE NULL,
   persona_idpersona INT NOT NULL,
   CONSTRAINT pk_idPasajero PRIMARY KEY (idPasajero),
   CONSTRAINT fk_pasajero_persona1
     FOREIGN KEY (persona_idpersona)
-    REFERENCES aerolinea.Persona (idPersona)
+    REFERENCES Persona (idPersona)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Fabricante
+-- Table Fabricante
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Fabricante (
+CREATE TABLE IF NOT EXISTS Fabricante (
   idFabricante INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idFabricante PRIMARY KEY (idFabricante));
@@ -77,9 +75,9 @@ CREATE TABLE IF NOT EXISTS aerolinea.Fabricante (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Modelo
+-- Table Modelo
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Modelo (
+CREATE TABLE IF NOT EXISTS Modelo (
   idModelo INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   fechaFabricacion DATE NULL,
@@ -87,16 +85,16 @@ CREATE TABLE IF NOT EXISTS aerolinea.Modelo (
   CONSTRAINT pk_idModelo PRIMARY KEY (idModelo),
   CONSTRAINT fk_Modelo_Fabricante1
     FOREIGN KEY (Fabricante_idFabricante)
-    REFERENCES aerolinea.Fabricante (idFabricante)
+    REFERENCES Fabricante (idFabricante)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Avion
+-- Table Avion
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Avion (
+CREATE TABLE IF NOT EXISTS Avion (
   idAvion INT NOT NULL,
   numeroPlaca VARCHAR(45) NOT NULL,
   capacidad INT NULL,
@@ -107,7 +105,7 @@ CREATE TABLE IF NOT EXISTS aerolinea.Avion (
   UNIQUE (numeroPlaca),
   CONSTRAINT fk_Avion_Modelo1
     FOREIGN KEY (Modelo_idModelo)
-    REFERENCES aerolinea.Modelo (idModelo)
+    REFERENCES Modelo (idModelo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
@@ -115,9 +113,9 @@ CREATE TABLE IF NOT EXISTS aerolinea.Avion (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Asiento
+-- Table Asiento
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Asiento (
+CREATE TABLE IF NOT EXISTS Asiento (
   idAsiento INT NOT NULL,
   numeroAsiento VARCHAR(45) NULL,
   ubicacion VARCHAR(45) NULL,
@@ -126,14 +124,14 @@ CREATE TABLE IF NOT EXISTS aerolinea.Asiento (
   CONSTRAINT pk_idAsiento PRIMARY KEY (idAsiento),
   CONSTRAINT fk_Asiento_Avion1
     FOREIGN KEY (Avion_idAvion)
-    REFERENCES aerolinea.Avion (idAvion)
+    REFERENCES Avion (idAvion)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
--- Table aerolinea.Piloto
+-- Table Piloto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Piloto (
+CREATE TABLE IF NOT EXISTS Piloto (
   idPiloto INT NOT NULL,
   fechaIngreso DATE NULL,
   cantidadHorasVuelo decimal NULL,
@@ -141,14 +139,14 @@ CREATE TABLE IF NOT EXISTS aerolinea.Piloto (
   CONSTRAINT pk_idPiloto PRIMARY KEY (idPiloto),
   CONSTRAINT fk_Piloto_Persona1
     FOREIGN KEY (Persona_idPersona)
-    REFERENCES aerolinea.Persona (idPersona)
+    REFERENCES Persona (idPersona)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
--- Table aerolinea.TipoClase
+-- Table TipoClase
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.TipoClase (
+CREATE TABLE IF NOT EXISTS TipoClase (
   idTipoClase INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   numeroMaletaPermitida INT NULL,
@@ -156,9 +154,9 @@ CREATE TABLE IF NOT EXISTS aerolinea.TipoClase (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Aeropuerto
+-- Table Aeropuerto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Aeropuerto (
+CREATE TABLE IF NOT EXISTS Aeropuerto (
   idAeropuerto INT NOT NULL,
   codigoInterno VARCHAR(45) NOT NULL,
   nombre VARCHAR(45) NULL,
@@ -166,15 +164,15 @@ CREATE TABLE IF NOT EXISTS aerolinea.Aeropuerto (
   CONSTRAINT pk_idAeropuerto PRIMARY KEY (idAeropuerto),
   CONSTRAINT fk_Aeropuerto_Pais1
     FOREIGN KEY (Pais_idPais)
-    REFERENCES aerolinea.Pais (idPais)
+    REFERENCES Pais (idPais)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Terminal
+-- Table Terminal
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Terminal (
+CREATE TABLE IF NOT EXISTS Terminal (
   idTerminal INT NOT NULL,
   codigoTerminal VARCHAR(45) NOT NULL,
   descripcion VARCHAR(45) NULL,
@@ -182,16 +180,16 @@ CREATE TABLE IF NOT EXISTS aerolinea.Terminal (
   CONSTRAINT pk_idTerminal PRIMARY KEY (idTerminal),
   CONSTRAINT fk_Terminal_Aeropuerto1
     FOREIGN KEY (Aeropuerto_idAeropuerto)
-    REFERENCES aerolinea.Aeropuerto (idAeropuerto)
+    REFERENCES Aeropuerto (idAeropuerto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Puerta
+-- Table Puerta
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Puerta (
+CREATE TABLE IF NOT EXISTS Puerta (
   idPuerta INT NOT NULL,
   codigoPuerta VARCHAR(45) NULL,
   nombre VARCHAR(45) NULL,
@@ -199,14 +197,14 @@ CREATE TABLE IF NOT EXISTS aerolinea.Puerta (
   CONSTRAINT pk_idPuerta PRIMARY KEY (idPuerta),
   CONSTRAINT fk_Puerta_Terminal1
     FOREIGN KEY (Terminal_idTerminal)
-    REFERENCES aerolinea.Terminal (idTerminal)
+    REFERENCES Terminal (idTerminal)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 -- -----------------------------------------------------
--- Table aerolinea.Vuelo
+-- Table Vuelo
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Vuelo (
+CREATE TABLE IF NOT EXISTS Vuelo (
   idVuelo INT NOT NULL,
   cantidadEscala INT NULL,
   horaFechaSalida timestamp NULL,
@@ -219,35 +217,35 @@ CREATE TABLE IF NOT EXISTS aerolinea.Vuelo (
   CONSTRAINT pk_idVuelo PRIMARY KEY (idVuelo),
   CONSTRAINT fk_vuelo_Piloto1
     FOREIGN KEY (Piloto_idPiloto)
-    REFERENCES aerolinea.Piloto (idPiloto)
+    REFERENCES Piloto (idPiloto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_vuelo_Avion1
     FOREIGN KEY (Avion_idAvion)
-    REFERENCES aerolinea.Avion (idAvion)
+    REFERENCES Avion (idAvion)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Vuelo_TipoClase1
     FOREIGN KEY (TipoClase_idTipoClase)
-    REFERENCES aerolinea.TipoClase (idTipoClase)
+    REFERENCES TipoClase (idTipoClase)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Vuelo_Puerta1
     FOREIGN KEY (idPuertaOrigen)
-    REFERENCES aerolinea.Puerta (idPuerta)
+    REFERENCES Puerta (idPuerta)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Vuelo_Puerta2
     FOREIGN KEY (idPuertaDestino)
-    REFERENCES aerolinea.Puerta (idPuerta)
+    REFERENCES Puerta (idPuerta)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Boleto
+-- Table Boleto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Boleto (
+CREATE TABLE IF NOT EXISTS Boleto (
   idBoleto INT NOT NULL,
   fechaEmision DATE NULL,
   precioCompra decimal NULL,
@@ -259,30 +257,30 @@ CREATE TABLE IF NOT EXISTS aerolinea.Boleto (
   CONSTRAINT pk_idBoleto PRIMARY KEY (idBoleto),
   CONSTRAINT fk_Boleto_Asiento1
     FOREIGN KEY (Asiento_idAsiento)
-    REFERENCES aerolinea.Asiento (idAsiento)
+    REFERENCES Asiento (idAsiento)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Boleto_vuelo1
     FOREIGN KEY (vuelo_idvuelo)
-    REFERENCES aerolinea.Vuelo (idVuelo)
+    REFERENCES Vuelo (idVuelo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Boleto_TipoClase1
     FOREIGN KEY (TipoClase_idTipoClase)
-    REFERENCES aerolinea.TipoClase (idTipoClase)
+    REFERENCES TipoClase (idTipoClase)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Boleto_Pasajero1
     FOREIGN KEY (Pasajero_idPasajero)
-    REFERENCES aerolinea.Pasajero (idPasajero)
+    REFERENCES Pasajero (idPasajero)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Equipaje
+-- Table Equipaje
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Equipaje (
+CREATE TABLE IF NOT EXISTS Equipaje (
   idEquipaje INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   peso decimal NULL,
@@ -294,29 +292,29 @@ CREATE TABLE IF NOT EXISTS aerolinea.Equipaje (
   CONSTRAINT pk_idEquipaje PRIMARY KEY (idEquipaje),
   CONSTRAINT fk_Equipaje_TipoClase1
     FOREIGN KEY (TipoClase_idTipoClase)
-    REFERENCES aerolinea.TipoClase (idTipoClase)
+    REFERENCES TipoClase (idTipoClase)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Equipaje_Boleto1
     FOREIGN KEY (Boleto_idBoleto)
-    REFERENCES aerolinea.Boleto (idBoleto)
+    REFERENCES Boleto (idBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Etapa
+-- Table Etapa
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Etapa (
+CREATE TABLE IF NOT EXISTS Etapa (
   idEtapa INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idEtapa PRIMARY KEY (idEtapa));
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Reglamentaciones
+-- Table Reglamentaciones
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Reglamentaciones (
+CREATE TABLE IF NOT EXISTS Reglamentaciones (
   idReglamentaciones INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   estado VARCHAR(45) NULL,
@@ -324,30 +322,30 @@ CREATE TABLE IF NOT EXISTS aerolinea.Reglamentaciones (
   CONSTRAINT pk_idReglamentaciones PRIMARY KEY (idReglamentaciones),
   CONSTRAINT fk_Reglamentaciones_Etapa1
     FOREIGN KEY (Etapa_idEtapa)
-    REFERENCES aerolinea.Etapa (idEtapa)
+    REFERENCES Etapa (idEtapa)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Empleado
+-- Table Empleado
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Empleado (
+CREATE TABLE IF NOT EXISTS Empleado (
   idEmpleado INT NOT NULL,
   fechaContratacion DATE NULL,
   Persona_idPersona INT NOT NULL,
   CONSTRAINT pk_idEmpleado PRIMARY KEY (idEmpleado),
   CONSTRAINT fk_Empleado_Persona1
     FOREIGN KEY (Persona_idPersona)
-    REFERENCES aerolinea.Persona (idPersona)
+    REFERENCES Persona (idPersona)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.PrecioVuelo
+-- Table PrecioVuelo
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.PrecioVuelo (
+CREATE TABLE IF NOT EXISTS PrecioVuelo (
   idPrecioVuelo INT NOT NULL,
   precio decimal NULL,
   fechaInicio DATE NULL,
@@ -356,15 +354,15 @@ CREATE TABLE IF NOT EXISTS aerolinea.PrecioVuelo (
   CONSTRAINT pk_idPrecioVuelo PRIMARY KEY (idPrecioVuelo),
   CONSTRAINT fk_PrecioVuelo_Vuelo1
     FOREIGN KEY (Vuelo_idVuelo)
-    REFERENCES aerolinea.Vuelo (idVuelo)
+    REFERENCES Vuelo (idVuelo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Escala
+-- Table Escala
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Escala (
+CREATE TABLE IF NOT EXISTS Escala (
   idEscala INT NOT NULL,
   fechaHoraSalida timestamp NULL,
   fechaHoraLlegada timestamp NULL,
@@ -374,49 +372,49 @@ CREATE TABLE IF NOT EXISTS aerolinea.Escala (
   CONSTRAINT pk_idEscala PRIMARY KEY (idEscala),
   CONSTRAINT fk_Escala_Vuelo1
     FOREIGN KEY (Vuelo_idVuelo)
-    REFERENCES aerolinea.Vuelo (idVuelo)
+    REFERENCES Vuelo (idVuelo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Escala_Puerta1
     FOREIGN KEY (idPuertaOrigen)
-    REFERENCES aerolinea.Puerta (idPuerta)
+    REFERENCES Puerta (idPuerta)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Escala_Puerta2
     FOREIGN KEY (idPuertaDestino)
-    REFERENCES aerolinea.Puerta (idPuerta)
+    REFERENCES Puerta (idPuerta)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.TipoLicencia
+-- Table TipoLicencia
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.TipoLicencia (
+CREATE TABLE IF NOT EXISTS TipoLicencia (
   idTipoLicencia INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idTipoLicencia PRIMARY KEY (idTipoLicencia));
 
 
 -- -----------------------------------------------------
--- Table aerolinea.TipoAsiento
+-- Table TipoAsiento
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.TipoAsiento (
+CREATE TABLE IF NOT EXISTS TipoAsiento (
   idTipoAsiento INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   Asiento_idAsiento INT NOT NULL,
   CONSTRAINT pk_idTipoAsiento PRIMARY KEY (idTipoAsiento),
   CONSTRAINT fk_tipoAsiento_Asiento1
     FOREIGN KEY (Asiento_idAsiento)
-    REFERENCES aerolinea.Asiento (idAsiento)
+    REFERENCES Asiento (idAsiento)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.TipoHallazgo
+-- Table TipoHallazgo
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.TipoHallazgo (
+CREATE TABLE IF NOT EXISTS TipoHallazgo (
   idTipoHallazgo INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   estado VARCHAR(45) NULL,
@@ -424,18 +422,18 @@ CREATE TABLE IF NOT EXISTS aerolinea.TipoHallazgo (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.TipoMantenimiento
+-- Table TipoMantenimiento
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.TipoMantenimiento (
+CREATE TABLE IF NOT EXISTS TipoMantenimiento (
   idTipoMantenimiento INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idTipoMantenimiento PRIMARY KEY (idTipoMantenimiento));
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Mantenimiento
+-- Table Mantenimiento
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Mantenimiento (
+CREATE TABLE IF NOT EXISTS Mantenimiento (
   idMantenimiento INT NOT NULL,
   fechaMantenimiento DATE NULL,
   descripcionReparaciones VARCHAR(200) NULL,
@@ -446,30 +444,30 @@ CREATE TABLE IF NOT EXISTS aerolinea.Mantenimiento (
   CONSTRAINT pk_idMantenimiento PRIMARY KEY (idMantenimiento),
   CONSTRAINT fk_Mantenimiento_Avion1
     FOREIGN KEY (Avion_idAvion)
-    REFERENCES aerolinea.Avion (idAvion)
+    REFERENCES Avion (idAvion)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Mantenimiento_Empleado1
     FOREIGN KEY (Empleado_idEmpleado)
-    REFERENCES aerolinea.Empleado (idEmpleado)
+    REFERENCES Empleado (idEmpleado)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Mantenimiento_TipoHallazgo1
     FOREIGN KEY (TipoHallazgo_idTipoHallazgo)
-    REFERENCES aerolinea.TipoHallazgo (idTipoHallazgo)
+    REFERENCES TipoHallazgo (idTipoHallazgo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Mantenimiento_TipoMantenimiento1
     FOREIGN KEY (TipoMantenimiento_idTipoMantenimiento)
-    REFERENCES aerolinea.TipoMantenimiento (idTipoMantenimiento)
+    REFERENCES TipoMantenimiento (idTipoMantenimiento)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.EquipajeAdicional
+-- Table EquipajeAdicional
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.EquipajeAdicional (
+CREATE TABLE IF NOT EXISTS EquipajeAdicional (
   idEquipajeAdicional INT NOT NULL,
   peso decimal NULL,
   ancho decimal NULL,
@@ -480,15 +478,15 @@ CREATE TABLE IF NOT EXISTS aerolinea.EquipajeAdicional (
   CONSTRAINT pk_idEquipajeAdicional PRIMARY KEY (idEquipajeAdicional),
   CONSTRAINT fk_EquipajeAdicional_Boleto1
     FOREIGN KEY (Boleto_idBoleto)
-    REFERENCES aerolinea.Boleto (idBoleto)
+    REFERENCES Boleto (idBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.SolicitudRevision
+-- Table SolicitudRevision
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.SolicitudRevision (
+CREATE TABLE IF NOT EXISTS SolicitudRevision (
   idSolicitudRevision INT NOT NULL,
   fechaHoraInicio timestamp NULL,
   fechaHoraFin timestamp NULL,
@@ -499,30 +497,30 @@ CREATE TABLE IF NOT EXISTS aerolinea.SolicitudRevision (
   CONSTRAINT pk_idSolicitudRevision PRIMARY KEY (idSolicitudRevision),
   CONSTRAINT fk_SolicitudRevision_Etapa1
     FOREIGN KEY (Etapa_idEtapa)
-    REFERENCES aerolinea.Etapa (idEtapa)
+    REFERENCES Etapa (idEtapa)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_SolicitudRevision_Equipaje1
     FOREIGN KEY (Equipaje_idEquipaje)
-    REFERENCES aerolinea.Equipaje (idEquipaje)
+    REFERENCES Equipaje (idEquipaje)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_SolicitudRevision_Empleado1
     FOREIGN KEY (Empleado_idEmpleado)
-    REFERENCES aerolinea.Empleado (idEmpleado)
+    REFERENCES Empleado (idEmpleado)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_SolicitudRevision_EquipajeAdicional1
     FOREIGN KEY (EquipajeAdicional_idEquipajeAdicional)
-    REFERENCES aerolinea.EquipajeAdicional (idEquipajeAdicional)
+    REFERENCES EquipajeAdicional (idEquipajeAdicional)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.CargoAdicional
+-- Table CargoAdicional
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.CargoAdicional (
+CREATE TABLE IF NOT EXISTS CargoAdicional (
   idCargoAdicional INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   fechaInicio DATE NULL,
@@ -532,28 +530,28 @@ CREATE TABLE IF NOT EXISTS aerolinea.CargoAdicional (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Boleto_has_CargoAdicional
+-- Table Boleto_has_CargoAdicional
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Boleto_has_CargoAdicional (
+CREATE TABLE IF NOT EXISTS Boleto_has_CargoAdicional (
   Boleto_idBoleto INT NOT NULL,
   CargoAdicional_idCargoAdicional INT NOT NULL,
   CONSTRAINT pk_Boleto_idBoleto_CargoAdicional_idCargoAdicional PRIMARY KEY (Boleto_idBoleto, CargoAdicional_idCargoAdicional),
   CONSTRAINT fk_Boleto_has_CargoAdicional_Boleto1
     FOREIGN KEY (Boleto_idBoleto)
-    REFERENCES aerolinea.Boleto (idBoleto)
+    REFERENCES Boleto (idBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Boleto_has_CargoAdicional_CargoAdicional1
     FOREIGN KEY (CargoAdicional_idCargoAdicional)
-    REFERENCES aerolinea.CargoAdicional (idCargoAdicional)
+    REFERENCES CargoAdicional (idCargoAdicional)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.EtapaBoleto
+-- Table EtapaBoleto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.EtapaBoleto (
+CREATE TABLE IF NOT EXISTS EtapaBoleto (
   idEtapaBoleto INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   estado VARCHAR(45) NULL,
@@ -561,9 +559,9 @@ CREATE TABLE IF NOT EXISTS aerolinea.EtapaBoleto (
 
 
 -- -----------------------------------------------------
--- Table aerolinea.RequisitoBoleto
+-- Table RequisitoBoleto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.RequisitoBoleto (
+CREATE TABLE IF NOT EXISTS RequisitoBoleto (
   idRequisitoBoleto INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   estado VARCHAR(45) NULL,
@@ -571,15 +569,15 @@ CREATE TABLE IF NOT EXISTS aerolinea.RequisitoBoleto (
   CONSTRAINT pk_idRequisitoBoleto PRIMARY KEY (idRequisitoBoleto),
   CONSTRAINT fk_RequisitoBoleto_EtapaBoleto1
     FOREIGN KEY (EtapaBoleto_idEtapaBoleto)
-    REFERENCES aerolinea.EtapaBoleto (idEtapaBoleto)
+    REFERENCES EtapaBoleto (idEtapaBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.SolicitudCompraBoleto
+-- Table SolicitudCompraBoleto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.SolicitudCompraBoleto (
+CREATE TABLE IF NOT EXISTS SolicitudCompraBoleto (
   idSolicitudCompraBoleto INT NOT NULL,
   fechaHoraInicio timestamp NULL,
   fechaHoraFin timestamp NULL,
@@ -589,49 +587,49 @@ CREATE TABLE IF NOT EXISTS aerolinea.SolicitudCompraBoleto (
   CONSTRAINT pk_idSolicitudCompraBoleto PRIMARY KEY (idSolicitudCompraBoleto),
   CONSTRAINT fk_SolicitudCompraBoleto_Boleto1
     FOREIGN KEY (Boleto_idBoleto)
-    REFERENCES aerolinea.Boleto (idBoleto)
+    REFERENCES Boleto (idBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_SolicitudCompraBoleto_EtapaBoleto1
     FOREIGN KEY (EtapaBoleto_idEtapaBoleto)
-    REFERENCES aerolinea.EtapaBoleto (idEtapaBoleto)
+    REFERENCES EtapaBoleto (idEtapaBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_SolicitudCompraBoleto_Empleado1
     FOREIGN KEY (Empleado_idEmpleado)
-    REFERENCES aerolinea.Empleado (idEmpleado)
+    REFERENCES Empleado (idEmpleado)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Area
+-- Table Area
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Area (
+CREATE TABLE IF NOT EXISTS Area (
   idArea INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idArea PRIMARY KEY (idArea));
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Cargo
+-- Table Cargo
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Cargo (
+CREATE TABLE IF NOT EXISTS Cargo (
   idCargo INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   Area_idArea INT NOT NULL,
   CONSTRAINT pk_idCargo PRIMARY KEY (idCargo),
   CONSTRAINT fk_Cargo_Area1
     FOREIGN KEY (Area_idArea)
-    REFERENCES aerolinea.Area (idArea)
+    REFERENCES Area (idArea)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Cargo_has_Empleado
+-- Table Cargo_has_Empleado
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Cargo_has_Empleado (
+CREATE TABLE IF NOT EXISTS Cargo_has_Empleado (
   Cargo_idCargo INT NOT NULL,
   Empleado_idEmpleado INT NOT NULL,
   fechaInicio DATE NULL,
@@ -640,48 +638,48 @@ CREATE TABLE IF NOT EXISTS aerolinea.Cargo_has_Empleado (
   CONSTRAINT pk_Cargo_idCargo_Empleado_idEmpleado PRIMARY KEY (Cargo_idCargo, Empleado_idEmpleado),
   CONSTRAINT fk_Cargo_has_Empleado_Cargo1
     FOREIGN KEY (Cargo_idCargo)
-    REFERENCES aerolinea.Cargo (idCargo)
+    REFERENCES Cargo (idCargo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Cargo_has_Empleado_Empleado1
     FOREIGN KEY (Empleado_idEmpleado)
-    REFERENCES aerolinea.Empleado (idEmpleado)
+    REFERENCES Empleado (idEmpleado)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.FormaPago
+-- Table FormaPago
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.FormaPago (
+CREATE TABLE IF NOT EXISTS FormaPago (
   idFormaPago INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idFormaPago PRIMARY KEY (idFormaPago));
 
 
 -- -----------------------------------------------------
--- Table aerolinea.FormaPago_has_Boleto
+-- Table FormaPago_has_Boleto
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.FormaPago_has_Boleto (
+CREATE TABLE IF NOT EXISTS FormaPago_has_Boleto (
   FormaPago_idFormaPago INT NOT NULL,
   Boleto_idBoleto INT NOT NULL,
   CONSTRAINT pk_FormaPago_idFormaPago_Boleto_idBoleto PRIMARY KEY (FormaPago_idFormaPago, Boleto_idBoleto),
   CONSTRAINT fk_FormaPago_has_Boleto_FormaPago1
     FOREIGN KEY (FormaPago_idFormaPago)
-    REFERENCES aerolinea.FormaPago (idFormaPago)
+    REFERENCES FormaPago (idFormaPago)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_FormaPago_has_Boleto_Boleto1
     FOREIGN KEY (Boleto_idBoleto)
-    REFERENCES aerolinea.Boleto (idBoleto)
+    REFERENCES Boleto (idBoleto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
--- Table aerolinea.Licencia
+-- Table Licencia
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS aerolinea.Licencia (
+CREATE TABLE IF NOT EXISTS Licencia (
   idLicencia INT NOT NULL,
   descripcion VARCHAR(45) NULL,
   fechaAprobacion DATE NULL,
@@ -691,12 +689,12 @@ CREATE TABLE IF NOT EXISTS aerolinea.Licencia (
   CONSTRAINT pk_idLicencia PRIMARY KEY (idLicencia),
   CONSTRAINT fk_Licencia_Piloto1
     FOREIGN KEY (Piloto_idPiloto)
-    REFERENCES aerolinea.Piloto (idPiloto)
+    REFERENCES Piloto (idPiloto)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_Licencia_TipoLicencia1
     FOREIGN KEY (TipoLicencia_idTipoLicencia)
-    REFERENCES aerolinea.TipoLicencia (idTipoLicencia)
+    REFERENCES TipoLicencia (idTipoLicencia)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
