@@ -183,6 +183,13 @@ insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Mo
 insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (9, 'nz-043', 70, 'Boeing 707', 4790, 9);
 insert into Avion (idAvion, numeroPlaca, capacidad, descripcion, tiempoVuelo, Modelo_idModelo) values (10, 'wf-100', 46, 'A380', 3139, 10);
 
+-- -----------------------------------------------------
+-- Table TipoAsiento
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS TipoAsiento (
+  idTipoAsiento INT NOT NULL,
+  descripcion VARCHAR(45) NULL,
+  CONSTRAINT pk_idTipoAsiento PRIMARY KEY (idTipoAsiento));
 
 -- -----------------------------------------------------
 -- Table Asiento
@@ -193,13 +200,20 @@ CREATE TABLE IF NOT EXISTS Asiento (
   ubicacion VARCHAR(45) NULL,
   fechaUltimoMantenimiento DATE NULL,
   Avion_idAvion INT NOT NULL,
+  TipoAsiento_idTipoAsiento INT NOT NULL,
   CONSTRAINT pk_idAsiento PRIMARY KEY (idAsiento),
   CONSTRAINT fk_Asiento_Avion1
     FOREIGN KEY (Avion_idAvion)
     REFERENCES Avion (idAvion)
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+    CONSTRAINT fk_Asiento_TipoAsiento1
+    FOREIGN KEY (TipoAsiento_idTipoAsiento)
+    REFERENCES TipoAsiento (idTipoAsiento)
+     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+    
 -- -----------------------------------------------------
 -- Table Piloto
 -- -----------------------------------------------------
@@ -602,20 +616,6 @@ CREATE TABLE IF NOT EXISTS TipoLicencia (
   descripcion VARCHAR(45) NULL,
   CONSTRAINT pk_idTipoLicencia PRIMARY KEY (idTipoLicencia));
 
-
--- -----------------------------------------------------
--- Table TipoAsiento
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS TipoAsiento (
-  idTipoAsiento INT NOT NULL,
-  descripcion VARCHAR(45) NULL,
-  Asiento_idAsiento INT NOT NULL,
-  CONSTRAINT pk_idTipoAsiento PRIMARY KEY (idTipoAsiento),
-  CONSTRAINT fk_tipoAsiento_Asiento1
-    FOREIGN KEY (Asiento_idAsiento)
-    REFERENCES Asiento (idAsiento)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
