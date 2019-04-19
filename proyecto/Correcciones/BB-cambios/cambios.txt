@@ -7,3 +7,4 @@
 ->Inserts para completar 15 paises
 ->Inserts de prueba Aeropuerto,terminal,puerta
 ->Inserts Fabricante, Modelo, Avion de prueba
+->Insert CargoAdicional por equipajeAdicional

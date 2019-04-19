@@ -52,5 +52,3 @@ INSERT INTO public.tipolicencia(
 INSERT INTO public.tipolicencia(
 	idtipolicencia, descripcion)
 	VALUES (3, 'Piloto de vuelo libre');
-
-    
