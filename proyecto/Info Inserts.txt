@@ -1,0 +1,12 @@
+Tipos de Licencia :
+
+    3-Piloto de vuelo libre
+    2-Piloto privado
+    1-Piloto comercial
+
+
+Tipos de Asiento :
+   
+    1-Turista 
+    2-Ejecutiva
+    3-Primera clase
