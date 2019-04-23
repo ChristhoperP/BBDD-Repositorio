@@ -1,8 +1,15 @@
 ->Se elimina el schema aerolinea
-->Se añade la comlumna password a la tabla cliente.
-->Se hace unica el atributo identidad de persona.
+
+->Se añade la comlumna password a la tabla pasajero.
+
+->Se hace unico el atributo identidad de persona.
+
 ->se le agregan 3 insert de paises
+
 ->Establecer la contraseña como text
+
+->Se cambia la relación de asiento a tipo asiento de 1:n a n:1
+
 ->Inserts de tipoclase
 ->Inserts para completar 15 paises
 ->Inserts de prueba Aeropuerto,terminal,puerta
