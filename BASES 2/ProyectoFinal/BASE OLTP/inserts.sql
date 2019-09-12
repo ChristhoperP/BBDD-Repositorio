@@ -754,7 +754,7 @@ INSERT INTO aeropuerto(idaeropuerto, codigoInterno, nombre, Pais_idPais) VALUES 
 
 
 -- INSERT TABLA TERMINAL
-
+INSERT INTO terminal(idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto) VALUES (1, '1', 'Terminal02', 1);
 INSERT INTO terminal(idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto) VALUES (2, '2', 'Terminal02', 1);
 INSERT INTO terminal(idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto) VALUES (3, '3', 'Terminal01', 2);
 INSERT INTO terminal(idterminal, codigoterminal, descripcion, aeropuerto_idaeropuerto) VALUES (4, '4', 'Terminal02', 2);
