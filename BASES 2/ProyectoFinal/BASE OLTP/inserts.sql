@@ -1,10 +1,10 @@
 
 -- INSERT TABLA PAIS
 
-INSERT INTO pais (idPais, nombre, nombreCorto) VALUES (1,'Honduras','HND');
+  INSERT INTO pais (idPais, nombre, nombreCorto) VALUES (1,'Honduras','HND');
   INSERT INTO pais (idPais, nombre, nombreCorto) VALUES (2,'Mexico','MEX');
   INSERT INTO pais (idPais, nombre, nombreCorto) VALUES (3,'Costa Rica','CRI');
-  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (4, 'Estados Unidos de América', 'USA');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (4, 'Estados Unidos de América','USA');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (5, 'España', 'ESP');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (6, 'El Salvador', 'SLV');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (7, 'Francia', 'FRA');
@@ -16,6 +16,47 @@ INSERT INTO pais (idPais, nombre, nombreCorto) VALUES (1,'Honduras','HND');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (13, 'Panamá', 'PAN');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (14, 'Venezuela', 'VEN');
   INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (15, 'Cuba', 'CUB');
+  -- NUEVOS 
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (16, 'Brasil', 'BRA');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (17, 'Belice', 'CUB');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (18, 'Bolivia', 'BOL');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (19, 'Suiza', 'SUI');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (20, 'Egipto', 'EGY');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (21, 'Turkey', 'TKY');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (22, 'Cook Islands', 'COI');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (23, 'Mozambique', 'MOZ');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (24, 'Libya', 'LIB');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (25, 'Mongolia', 'MGL');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (26, 'Chile', 'CHI');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (27, 'Seychelles', 'SEY');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (28, 'Gambia', 'GAM');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (29, 'United Kingdom', 'UKI');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (30, 'Kenya', 'KEN');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (31, 'Madagascar', 'MAD');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (32, 'South Africa', 'SOA');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (33, 'British Indian', 'BIN');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (34, 'Algeria', 'ALG');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (35, 'Congo', 'CON');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (36, 'Mayotte', 'MAY');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (37, 'Fiji', 'FIJ');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (38, 'Anguilla', 'ANG');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (39, 'Benin', 'BEN');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (40, 'Brunei', 'BRU');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (41, 'Monaco', 'MON');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (42, 'Tanzania', 'TAN');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (43, 'Macau', 'MAC');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (44, 'South Georgia', 'SOG');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (45, 'Cape Verde', 'CVE');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (46, 'Saint Barthelemy', 'SBA');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (47, 'Gibraltar', 'GIB');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (48, 'Faroe Islands', 'ISF');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (49, 'Western Sahara', 'SAH');
+  INSERT INTO pais(idpais, nombre, nombrecorto) VALUES (50, 'Luxembourg', 'LUX');
+  
+
+  
+
+
 
   -- INSERT TABLA PERSONA
 
@@ -49,12 +90,84 @@ insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoEl
 insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (28, 'Petronille', 'Sloan', 'Traske', 'Khristyukhin', 'skhristyukhinr@youtube.com', '1 Mosinee Lane', '8254583889', 13);
 insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (29, 'Kristien', 'Morgan', 'Rashleigh', 'Renish', 'mrenishs@skyrock.com', '16480 Coleman Lane', '8503229870', 14);
 insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (30, 'Pamela', 'Cecilio', 'Victoria', 'Lorrimer', 'clorrimert@nih.gov', '2639 Mariners Cove Street', '4314327758', 15);
+--NUEVOS
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (31, 'Melani', 'Monika', 'Tomasa', 'Warner', 'davon93@conroy.com', '2639 Mariners Cove Street', '4388921418', 43);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (32, 'Tiffani', 'Donny', 'Mauro', 'Heidi', 'fbauch@hotmail.com', '2639 Mariners Cove Street', '4935873564', 23);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (33, 'Tamica', 'Colene', 'Cicely', 'Alysha', 'darwin.reinger@gmail.com', '2639 Mariners Cove Street', '4606115549', 34);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (34, 'Iliana', 'Deeanna', 'Robby', 'Jonie', 'mollie36@hotmail.com', '2639 Mariners Cove Street', '3002724172', 31);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (35, 'Nieves', 'Nichole', 'Ann', 'Renae', 'sharvey@gmail.com', '2639 Mariners Cove Street', '2923899891', 18);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (36, 'Barb', 'Kristopher', 'Lionel', 'Verlie', 'tania.considine@dach.net', '2639 Mariners Cove Street', '3166748500', 28);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (37, 'Zachariah', 'Kevin', 'Mariko', 'Devora', 'pbarton@yahoo.com', '2639 Mariners Cove Street', '9122417211', 41);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (38, 'Andree', 'Devon', 'Marin', 'Elois', 'tmitchell@ortiz.com', '2639 Mariners Cove Street', '9858547294', 42);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (39, 'Kip', 'Effie', 'Mi', 'Gilma', 'lottie.rempel@schultz.info', '2639 Mariners Cove Street', '5568996931', 43);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (40, 'Nicholas', 'Julie', 'Corrie', 'Klara', 'colton41@yahoo.com', '2639 Mariners Cove Street', '2432422263', 31);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (41, 'Tana', 'Dillon', 'Eveline', 'Elvin', 'schowalter.marian@hotmail.com', '2639 Mariners Cove Street', '7457512525', 32);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (42, 'Moira', 'Paola', 'Chandra', 'Tatum', 'bjakubowski@mante.com', '2639 Mariners Cove Street', '5564865955', 33);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (43, 'Armandina', 'Arlinda', 'Dusty', 'Cathie', 'streich.kiel@rohan.com', '2639 Mariners Cove Street', '9436397811', 34);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (44, 'Charita', 'Letty', 'Raina', 'Francine', 'karianne.roberts@lesch.info', '2639 Mariners Cove Street', '3269870165', 35);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (45, 'Derek', 'Evelin', 'Travis', 'Thomasine', 'mcclure.aylin@corwin.org', '2639 Mariners Cove Street', '9914853205', 36);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (46, 'Keenan', 'Mi', 'Freddie', 'Rolanda', 'marina.mcclure@gmail.com', '2639 Mariners Cove Street', '4769266635', 22);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (47, 'Joette', 'Lowell', 'Dino', 'Shane', 'bell.legros@reichel.net', '2639 Mariners Cove Street', '4078752370', 23);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (48, 'Leonard', 'Sherley', 'Shawn', 'Danial', 'htorp@gmail.com', '2639 Mariners Cove Street', '5103776943', 24);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (49, 'Providencia', 'Alina', 'Phung', 'Joeann', 'kulas.mortimer@runolfsdottir.com', '2639 Mariners Cove Street', '9197283730', 25);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (50, 'Blythe', 'Rosaria', 'Angelika', 'Eliz', 'borer.britney@reichert.com', '2639 Mariners Cove Street', '8176133170', 26);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (51, 'Ariane', 'Maureen', 'Maurice', 'Sharell', 'lfranecki@prosacco.com', '2639 Mariners Cove Street', '9292790448', 27);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (52, 'Herminia', 'Brenton', 'Noreen', 'Melissia', 'emerald.crooks@gmail.com', '2639 Mariners Cove Street', '5393103749', 28);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (53, 'Antionette', 'Clair', 'Bailey', 'Francina', 'rogelio65@hotmail.com', '2639 Mariners Cove Street', '5894712923', 11);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (54, 'Mirella', 'Deana', 'Lissa', 'Dominic', 'randy42@renner.com', '2639 Mariners Cove Street', '7796105333', 12);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (55, 'Loise', 'Gavin', 'Tabitha', 'Dominick', 'kris.ressie@quigley.com', '2639 Mariners Cove Street', '2292735467', 13);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (56, 'Angelo', 'Nicky', 'Mittie', 'Leigh', 'liliana59@yahoo.com', '2639 Mariners Cove Street', '2697704830', 24);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (57, 'Maryalice', 'Noble', 'Almeda', 'Felicitas', 'beahan.charlene@yahoo.com', '2639 Mariners Cove Street', '7095666225', 26);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (58, 'Gaye', 'Micha', 'Samella', 'Trista', 'anderson.eli@abbott.net', '2639 Mariners Cove Street', '2798346900', 29);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (59, 'August', 'Tia', 'Barbra', 'Willetta', 'bruce26@larson.net', '2639 Mariners Cove Street', '3196302905', 31);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (60, 'Breann', 'Joellen', 'Ayesha', 'Jadwiga', 'kayleigh10@bogan.biz', '2639 Mariners Cove Street', '9292505917', 32);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (61, 'Linda', 'Marcene', 'Elane', 'Evelia', 'eugene.block@gmail.com', '2639 Mariners Cove Street', '4793636544', 34);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (62, 'Alethia', 'Bryanna', 'Mason', 'Renee', 'ricardo44@leffler.org', '2639 Mariners Cove Street', '7894491206', 45);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (63, 'Jess', 'Krista', 'Socorro', 'Elinor', 'freddy.jenkins@toy.com', '2639 Mariners Cove Street', '7796740329', 29);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (64, 'Sebastian', 'Sanda', 'Jamee', 'Dulcie', 'leonie.smitham@jakubowski.org', '2639 Mariners Cove Street', '5393024919', 50);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (65, 'Lydia', 'Latarsha', 'Kasha', 'Brynn', 'caroline.fritsch@goldner.info', '2639 Mariners Cove Street', '9494694116', 45);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (66, 'Leeanne', 'Christeen', 'Daina', 'Robbie', 'mgottlieb@steuber.com', '2639 Mariners Cove Street', '2295987602', 44);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (67, 'Randa', 'Nelly', 'Orval', 'Eugenie', 'krystina38@blanda.biz', '2639 Mariners Cove Street', '7193824409', 43);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (68, 'Keturah', 'Jimmie', 'Felisha', 'Kirk', 'plebsack@bins.net', '2639 Mariners Cove Street', '7095542044', 42);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (69, 'Agripina', 'Kattie', 'Penney', 'Elva', 'qkunze@medhurst.com', '2639 Mariners Cove Street', '9894916822', 21);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (70, 'Melia', 'Thaddeus', 'Lecia', 'Rosalva', 'deion75@schulist.net', '2639 Mariners Cove Street', '6394993049', 2);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (71, 'Setsuko', 'Stepanie', 'Mignon', 'Ludivina', 'stokes.josiane@dicki.com', '2639 Mariners Cove Street', '8192923729', 5);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (72, 'Willodean', 'Elisa', 'Salena', 'Scarlet', 'gaylord.elfrieda@yahoo.com', '2639 Mariners Cove Street', '8699492011', 26);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (73, 'Preston', 'Alida', 'Carter', 'Sunny', 'myah.hettinger@hotmail.com', '2639 Mariners Cove Street', '5293861237', 21);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (74, 'Lonny', 'Andreas', 'Sid', 'Latina', 'xschowalter@hotmail.com', '2639 Mariners Cove Street', '8299051166', 34);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (75, 'Floretta', 'Myrl', 'Brigette', 'Chanda', 'gpredovic@witting.com', '2639 Mariners Cove Street', '2295280536', 16);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (76, 'Emogene', 'Alonso', 'Adela', 'Karol', 'geovanny.schneider@nienow.com', '2639 Mariners Cove Street', '2796275726', 24);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (77, 'Liz', 'Thersa', 'Maragaret', 'Lianne', 'quinten49@donnelly.com', '2639 Mariners Cove Street', '2192744655', 22);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (78, 'Roberto', 'Cleo', 'Diedre', 'Gigi', 'lrippin@kozey.com', '2639 Mariners Cove Street', '6196144134', 26);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (79, 'Chelsie', 'Doyle', 'Kera', 'Penney', 'keaton.cassin@hotmail.com', '2639 Mariners Cove Street', '3799615463', 27);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (80, 'Izola', 'Clarinda', 'Lincoln', 'Latashia', 'arlo.gleichner@cummings.com', '2639 Mariners Cove Street', '8796548166', 29);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (81, 'Camila', 'Joanie', 'Ilse', 'Susan', 'luna23@oberbrunner.info', '2639 Mariners Cove Street', '2692734857', 21);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (82, 'Elisabet', 'Porsha', 'Kesha', 'Christeen', 'ppfeffer@gmail.com', '2639 Mariners Cove Street', '8398618576', 22);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (83, 'Nena', 'Shela', 'Tanisha', 'Josefa', 'river.pfannerstill@beatty.com', '2639 Mariners Cove Street', '4692859610', 12);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (84, 'Lucy', 'Kylie', 'Jeanene', 'Tanna', 'konopelski.nichole@macejkovic.com', '2639 Mariners Cove Street', '4395350387', 13);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (85, 'Danuta', 'Shanae', 'Noella', 'Kaye', 'ksmitham@daugherty.com', '2639 Mariners Cove Street', '7496566109', 50);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (86, 'Nicholas', 'Joie', 'Kori', 'Deb', 'halvorson.whitney@yahoo.com', '2639 Mariners Cove Street', '4492713188', 35);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (87, 'Carolyne', 'Chasidy', 'Eva', 'Evita', 'qdietrich@yahoo.com', '2639 Mariners Cove Street', '9296185519',36);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (88, 'Tina', 'Delmer', 'Kristina', 'Shanae', 'raina.murray@frami.com', '2639 Mariners Cove Street', '8998948857', 23);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (89, 'Eliana', 'Launa', 'Ebony', 'Erik', 'brown.dwight@hammes.com', '2639 Mariners Cove Street', '2396347849', 21);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (90, 'Jamee', 'Demetrice', 'Samuel', 'Mignon', 'fbailey@hotmail.com', '2639 Mariners Cove Street', '5795868977', 23);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (91, 'Duane', 'Taunya', 'Jamika', 'Francesca', 'schuyler59@will.info', '2639 Mariners Cove Street', '4398192653', 23);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (92, 'Kera', 'Daria', 'Garry', 'Federico', 'nitzsche.delilah@lynch.com', '2639 Mariners Cove Street', '9295582771', 6);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (93, 'Hilde', 'Larissa', 'Shenna', 'Miyoko', 'clarissa60@anderson.com', '2639 Mariners Cove Street', '9393404375', 39);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (94, 'Tatiana', 'Janeen', 'Kerry', 'Micah', 'ostreich@kuhic.com', '2639 Mariners Cove Street', '5398967932', 38);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (95, 'Chantel', 'Kathie', 'Latrisha', 'Mitchel', 'waylon53@yahoo.com', '2639 Mariners Cove Street', '4299871767', 26);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (96, 'Claire', 'Joslyn', 'Reena', 'Vera', 'garett93@hotmail.com', '2639 Mariners Cove Street', '8394329487', 20);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (97, 'Jackelyn', 'Catarina', 'Shantell', 'Jacinto', 'jerald61@gmail.com', '2639 Mariners Cove Street', '5992180346', 30);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (98, 'Somer', 'Evelina', 'Valentine', 'Eartha', 'skemmer@wunsch.net', '2639 Mariners Cove Street', '7598400382', 40);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (99, 'Benton', 'Bess', 'Trista', 'Kirby', 'margaret15@yahoo.com', '2639 Mariners Cove Street', '4593379505', 41);
+insert into persona (idPersona, pNombre, sNombre, pApellido, sApellido, correoElectronico, direccion, numeroIdentidad, Pais_idPais) values (100, 'Amber', 'Renna', 'Magali', 'Joette', 'katlyn.zulauf@gmail.com', '2639 Mariners Cove Street', '9292009920', 26);
+
 
 
 
   -- INSERT TABLA PASAJERO
 
-  INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (1,'2019-03-05', 16);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (1,'2019-03-05', 16);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (2,'2019-03-05', 17);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (3,'2018-05-05', 18);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (4,'2017-02-03', 19);
@@ -63,12 +176,24 @@ INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (6,'20
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (7,'2018-05-05', 22);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (8,'2017-05-22', 23);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (9,'2016-05-05', 24);
-INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (10,'2019-03-3', 25);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (10,'2019-03-30', 25);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (11,'2016-05-05', 26);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (12,'2017-05-05', 27);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (13,'2018-05-05', 28);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (14,'2019-02-05', 29);
 INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (15,'2015-07-09', 30);
+--NUEVOS
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (16,'2019-03-05', 31);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (17,'2019-03-05', 32);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (18,'2018-05-05', 33);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (19,'2017-02-03', 34);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (20,'2019-03-04', 35);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (21,'2019-03-05', 36);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (22,'2018-05-05', 37);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (23,'2017-05-22', 38);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (24,'2016-05-05', 39);
+INSERT INTO pasajero(idpasajero, fecharegistro, persona_idpersona) VALUES (25,'2019-03-30', 40);
+
 
  -- INSERT TABLA AVION
 
@@ -984,41 +1109,107 @@ insert into Empleado (idEmpleado, fechaContratacion, Persona_idPersona) values (
 insert into Empleado (idEmpleado, fechaContratacion, Persona_idPersona) values (3, '2016-01-14', 3);
 insert into Empleado (idEmpleado, fechaContratacion, Persona_idPersona) values (4, '2015-08-23', 4);
 insert into Empleado (idEmpleado, fechaContratacion, Persona_idPersona) values (5, '2016-11-23', 5);
+--NUEVOS
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (6,'2016-05-05', 41);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (7,'2017-05-05', 42);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (8,'2018-05-05', 43);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (9,'2019-02-05', 44);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (10,'2019-03-05', 45);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (11,'2019-03-05', 46);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (12,'2018-05-05', 47);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (13,'2017-02-03', 48);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (14,'2019-03-04', 49);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (15,'2019-03-05', 50);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (16,'2018-05-05', 51);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (17,'2017-05-22', 52);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (18,'2016-05-05', 53);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (19,'2019-03-30', 54);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (20,'2016-05-05', 55);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (21,'2017-05-05', 56);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (22,'2018-05-05', 57);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (23,'2019-02-05', 58);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (24,'2016-07-03', 59);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (25,'2016-05-02', 60);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (26,'2016-07-01', 61);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (27,'2017-07-02', 62);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (28,'2014-06-03', 63);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (29,'2015-05-04', 64);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (30,'2016-05-05', 65);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (31,'2017-05-05', 66);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (32,'2018-05-05', 67);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (33,'2019-02-05', 68);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (34,'2019-03-05', 69);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (35,'2019-03-05', 70);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (36,'2018-05-05', 71);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (37,'2017-02-03', 72);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (38,'2019-03-04', 73);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (39,'2019-03-05', 74);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (40,'2018-05-05', 75);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (41,'2017-05-22', 76);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (42,'2016-05-05', 77);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (43,'2019-03-30', 78);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (44,'2016-05-05', 79);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (45,'2017-05-05', 80);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (46,'2018-05-05', 81);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (47,'2019-02-05', 82);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (48,'2016-07-03', 83);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (49,'2016-05-02', 84);
+INSERT INTO Empleado(idEmpleado, fechaContratacion, persona_idpersona) VALUES (50,'2016-07-01', 85);
+
 
 -- INSERT TABLA BOLETO 
 
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (1, '2019-02-06', 23000, 1, 1, 1, 1, 23500,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (2, '2019-02-08', 17000, 2, 1, 2, 2, 17500,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (3, '2019-02-27', 14000, 3, 1, 3, 3, 14500,3);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (4, '2019-02-21', 21000, 4, 1, 1, 4, 21500,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (5, '2019-02-19', 19000, 5, 1, 2, 5, 19500,5);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (8, '2019-02-27', 16500, 8, 1, 2, 8, 16500,3);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (6, '2019-02-18', 22000, 6, 1, 3, 6, 22900,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (7, '2019-02-15', 16000, 7, 1, 1, 7, 16500,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (9, '2019-02-28', 18600, 9, 1, 3, 9, 18500,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (10, '2019-02-01', 23000, 10, 1, 1, 10, 23500,5);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (11, '2019-02-15', 17000, 11, 1, 2, 11, 17500,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (12, '2019-02-16', 14000, 12, 1, 3, 12, 14500,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (13, '2019-02-16', 21000, 13, 1, 1, 13, 21500,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (14, '2019-02-01', 19000, 14, 1, 2, 14, 19500,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (15, '2019-02-17', 22000, 15, 1, 3, 15, 22500,5);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (16, '2019-02-26', 16000, 16, 1, 1, 1, 16000,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (17, '2019-02-27', 16500, 17, 1, 2, 2, 16500,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (18, '2019-02-26', 18600, 18, 1, 3, 3, 18600,3);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (19, '2019-02-19', 23000, 19, 1, 1, 4, 23000,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (20, '2019-02-16', 17000, 20, 1, 2, 5, 17000,5);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (21, '2019-02-27', 14000, 21, 1, 3, 6, 14000,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (22, '2019-02-27', 21000, 22, 1, 1, 7, 21000,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (23, '2019-02-03', 19000, 23, 1, 2, 8, 19000,3);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (24, '2019-02-28', 22000, 24, 1, 3, 9, 22000,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (25, '2019-02-07', 16000, 25, 1, 1, 10, 16500,1);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (26, '2019-02-17', 16500, 26, 1, 2, 11, 16500,2);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (27, '2019-02-02', 18600, 27, 1, 3, 12, 18500,3);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (28, '2019-02-06', 22000, 28, 1, 1, 13, 22500,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (29, '2019-02-28', 12000, 29, 1, 2, 14, 12500,4);
-insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (30, '2019-02-25', 14700, 30, 1, 3, 15, 15100,4);
-
--- INSERT INTO PRECIO VUELO
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (1, '2019-02-06 12:00:00', 23000, 1, 1, 1, 1, 23500,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (2, '2019-02-08 09:00:00', 17000, 2, 1, 2, 2, 17500,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (3, '2019-02-27 10:00:00', 14000, 3, 1, 3, 3, 14500,3);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (4, '2019-02-21 11:00:00', 21000, 4, 1, 1, 4, 21500,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (5, '2019-02-19 13:00:00', 19000, 5, 1, 2, 5, 19500,5);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (8, '2019-02-27 14:00:00', 16500, 8, 1, 2, 8, 16500,3);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (6, '2019-02-18 15:00:00', 22000, 6, 1, 3, 6, 22900,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (7, '2019-02-15 15:50:00', 16000, 7, 1, 1, 7, 16500,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (9, '2019-02-28 11:00:00', 18600, 9, 1, 3, 9, 18500,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (10, '2019-02-01 12:00:00', 23000, 10, 1, 1, 10, 23500,5);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (11, '2019-02-15 09:00:00', 17000, 11, 4, 2, 11, 17500,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (12, '2019-02-16 10:00:00', 14000, 12, 5, 3, 12, 14500,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (13, '2019-02-16 11:00:00', 21000, 13, 1, 1, 13, 21500,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (14, '2019-02-01 13:00:00', 19000, 14, 3, 2, 14, 19500,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (15, '2019-02-17 14:00:00', 22000, 15, 5, 3, 15, 22500,5);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (16, '2019-02-26 15:00:00', 16000, 16, 1, 1, 1, 16000,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (17, '2019-02-27 15:50:00', 16500, 17, 3, 2, 2, 16500,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (18, '2019-02-26 11:00:00', 18600, 18, 2, 3, 3, 18600,3);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (19, '2019-02-19 12:00:00', 23000, 19, 1, 1, 4, 23000,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (20, '2019-02-16 09:00:00', 17000, 20, 3, 2, 5, 17000,5);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (21, '2019-02-27 10:00:00', 14000, 21, 2, 3, 6, 14000,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (22, '2019-02-27 11:00:00', 21000, 22, 1, 1, 7, 21000,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (23, '2019-02-03 13:00:00', 19000, 23, 3, 2, 8, 19000,3);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (24, '2019-02-28 14:00:00', 22000, 24, 2, 3, 9, 22000,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (25, '2019-02-07 15:00:00', 16000, 25, 1, 1, 10, 16500,1);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (26, '2019-02-17 15:50:00', 16500, 26, 6, 2, 11, 16500,2);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (27, '2019-02-02 11:00:00', 18600, 27, 2, 3, 12, 18500,3);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (28, '2019-02-06 12:00:00', 22000, 28, 1, 1, 13, 22500,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (29, '2019-02-28 09:00:00', 12000, 29, 3, 2, 14, 12500,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (30, '2019-02-25 10:00:00', 14700, 30, 2, 3, 16, 15100,4);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (31, '2019-02-25 11:00:00', 17000, 31, 1, 3, 17, 17500,23);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (32, '2019-03-15 13:00:00', 14000, 32, 3, 3, 12, 14500,14);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (33, '2019-02-12 14:00:00', 21000, 33, 6, 2, 11, 21500,12);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (34, '2019-03-21 15:00:00', 19000, 34, 1, 1, 21, 19500,18);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (35, '2019-03-22 15:50:00', 22000, 35, 3, 3, 22, 22500,34);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (36, '2019-02-23 11:00:00', 16000, 36, 2, 3, 25, 16500,42);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (37, '2019-01-22 12:00:00', 16500, 37, 5, 2, 24, 16500,41);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (38, '2019-04-13 09:00:00', 18600, 38, 3, 1, 12, 18500,24);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (39, '2019-03-14 10:00:00', 22000, 39, 2, 3, 5, 22500,26);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (40, '2019-02-23 11:00:00', 12000, 40, 1, 3, 20, 12500,49);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (41, '2019-01-29 13:00:00', 17000, 41, 6, 2, 15, 17500,44);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (42, '2019-02-22 14:00:00', 14000, 42, 2, 1, 12, 14500,34);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (43, '2019-03-21 15:00:00', 21000, 43, 6, 3, 2, 21500,50);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (44, '2019-02-16 12:00:00', 19000, 44, 3, 3, 2, 19500,13);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (45, '2019-01-17 09:00:00', 22000, 45, 2, 2, 1, 22500,9);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (46, '2019-02-14 10:00:00', 16000, 46, 1, 1, 23, 16500,33);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (47, '2019-03-15 11:00:00', 16500, 47, 5, 3, 22, 16500,23);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (48, '2019-04-13 13:00:00', 18600, 48, 2, 3, 21, 18500,33);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (49, '2019-01-23 14:00:00', 22000, 49, 1, 3, 12, 22500,41);
+insert into Boleto (idBoleto, fechaEmision, precioCompra, Asiento_idAsiento, vuelo_idvuelo, TipoClase_idTipoClase, Pasajero_idPasajero, totalPrecioBoleto,Empleado_idEmpleado) values (50, '2019-02-22 15:00:00', 12000, 50, 1, 3, 13, 12515,50);
+-- INSERT INTO PREC11:00:00
 
 insert into PrecioVuelo (idPrecioVuelo, precio, fechaInicio, fechaFin, Vuelo_idVuelo) values (1, 22800.2, '2019-02-25', '2019-05-04', 1);
 insert into PrecioVuelo (idPrecioVuelo, precio, fechaInicio, fechaFin, Vuelo_idVuelo) values (2, 18800.8, '2019-01-22', '2019-04-04', 2);
