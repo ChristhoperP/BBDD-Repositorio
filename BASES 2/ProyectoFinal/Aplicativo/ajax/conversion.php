@@ -1,0 +1,45 @@
+<?php
+
+switch ($_GET["opcion"]) {
+        //Cargar las columnas
+    case '1':
+        session_start();
+        $arreglo = array();
+        $tipo_dato_numerico = array(-9 => "nvarchar", 1 => "Char", 93 => "datetime", 4 => "int", 6 => "float", 3 => "Money", -2 => "timestamp", 10 => "date",12 => "varchar");
+
+
+        for ($i = 0; $i < sizeof($_SESSION["columnas-origen-selec"]); $i++) {
+
+            for ($j = 0; $j < sizeof($_SESSION["columnas-origen"]); $j++) {
+                if ($_SESSION["columnas-origen-selec"][$i] == $_SESSION["columnas-origen"][$j]["Name"]) {
+                    $arreglo[$i]["Name"] = $_SESSION["columnas-origen-selec"][$i];
+                    if(array_key_exists ( $_SESSION["columnas-origen"][$j]["Type"], $tipo_dato_numerico )){
+                        $arreglo[$i]["Type"] = $tipo_dato_numerico[$_SESSION["columnas-origen"][$j]["Type"]];
+                    }else{
+                        $arreglo[$i]["Type"] = "indefinido";
+                    }
+                    
+                }
+            }
+        }
+
+        echo json_encode($arreglo);
+        break;
+        //convierte el url encode a json
+    case '2':
+        echo json_encode($_POST);
+        break;
+    case '3':
+        session_start();
+        $_SESSION["Conversion-Columnas"] = json_decode($_POST["array"]);
+        echo $_POST["array"];
+        break;
+    case '4':
+        session_start();
+        $_SESSION["Original-Columnas"] = json_decode($_POST["array"]);
+        echo $_POST["array"];
+        break;
+    default:
+        # code...
+        break;
+}
