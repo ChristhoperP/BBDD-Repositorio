@@ -30,7 +30,8 @@ INNER JOIN Persona P ON E.Persona_idPersona=P.idPersona;
 SELECT idTipoClase,descripcion FROM TipoClase;
 
 --Hechos Boletos
-SELECT BO.idBoleto,EM.idEmpleado empleadoID, TC.idTipoClase claseID, PA_OR.idPais paisOrigenID, PA_DE.idPais paisDestinoID, CONVERT(DATE, BO.fechaEmision) tiempoId, SUM(BO.totalPrecioBoleto) totalVentaBoleto FROM BOLETO BO
+SELECT BO.idBoleto,EM.idEmpleado empleadoID, TC.idTipoClase claseID, PA_OR.idPais paisOrigenID, PA_DE.idPais paisDestinoID,
+ CONVERT(DATE, BO.fechaEmision) tiempoId, SUM(BO.totalPrecioBoleto) totalVentaBoleto FROM BOLETO BO
 INNER JOIN Empleado EM ON EM.idEmpleado=BO.Empleado_idEmpleado
 INNER JOIN TipoClase TC ON TC.idTipoClase=BO.TipoClase_idTipoClase
 INNER JOIN Vuelo VU ON VU.idVuelo=BO.vuelo_idvuelo
