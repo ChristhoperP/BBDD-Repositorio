@@ -118,14 +118,29 @@ BEGIN TRANSACTION
 GO
 CREATE TABLE dbo.Hechos_Boletos
 	(
+	boletoID int not NULL,
 	empleadoID int not NULL,
 	claseID int not NULL,
 	paisOrigenID int not NULL,
 	paisDestinoID int not NULL,
-	tiempoID date NULL,
+	tiempoID date not NULL,
 	totalVentaBoleto float(53) NULL
 	)  ON [PRIMARY]
 GO
+/* 
+
+CREATE TABLE dbo.Hechos_Boletos
+	(
+	empleadoID int not NULL,
+	claseID int not NULL,
+	paisOrigenID int not NULL,
+	paisDestinoID int not NULL,
+	tiempoID date not NULL,
+	totalVentaBoleto float(53) NULL
+	)  ON [PRIMARY]
+GO
+
+ */
 ALTER TABLE dbo.Hechos_Boletos ADD CONSTRAINT
 	FK_Hechos_Boletos_Dimension_Empleado FOREIGN KEY
 	(
@@ -189,4 +204,18 @@ ALTER TABLE dbo.Hechos_Boletos ADD CONSTRAINT
 GO
 ALTER TABLE dbo.Hechos_Boletos SET (LOCK_ESCALATION = TABLE)
 GO
+
+/* ALTER TABLE dbo.Hechos_Boletos ADD CONSTRAINT
+	PK_Hechos_Boletos PRIMARY KEY CLUSTERED 
+	(
+	empleadoID,
+	claseID,
+	paisOrigenID,
+	paisDestinoID,
+	tiempoID
+	) WITH( STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+ALTER TABLE dbo.Hechos_Boletos SET (LOCK_ESCALATION = TABLE)
+GO */
+
 COMMIT
