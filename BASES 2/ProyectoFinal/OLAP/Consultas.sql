@@ -43,5 +43,5 @@ INNER JOIN Puerta PU_DE ON PU_DE.idPuerta=VU.idPuertaDestino
 INNER JOIN Terminal TE_DE ON TE_DE.idTerminal=PU_DE.Terminal_idTerminal
 INNER JOIN Aeropuerto AE_DE ON AE_DE.idAeropuerto=TE_DE.Aeropuerto_idAeropuerto
 INNER JOIN Pais PA_DE ON PA_DE.idPais=AE_DE.Pais_idPais
-GROUP BY BO.idBoleto,EM.idEmpleado, TC.idTipoClase, PA_OR.idPais, PA_DE.idPais, fechaEmision;
+GROUP BY EM.idEmpleado, TC.idTipoClase, PA_OR.idPais, PA_DE.idPais, fechaEmision;
 
