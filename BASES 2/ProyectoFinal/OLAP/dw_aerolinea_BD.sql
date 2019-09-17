@@ -118,6 +118,7 @@ BEGIN TRANSACTION
 GO
 CREATE TABLE dbo.Hechos_Boletos
 	(
+	boletoID int not null,
 	empleadoID int not NULL,
 	claseID int not NULL,
 	paisOrigenID int not NULL,
