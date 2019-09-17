@@ -14,16 +14,17 @@ $conexion = new Conexion("localhost", $base);
 
 $resultado = $conexion->ejecutarConsulta('select t.name
     from sys.tables t');
-
-
 $formato = "{";
 
 $tope = sqlsrv_num_rows($resultado);
 $i = 0;
 
 while ($fila = sqlsrv_fetch_array($resultado)) {
-
-    $formato .= '"' . $i . '":{"nombre":"' . $fila[0] . '"},';
+    if (isset($_SESSION['consulta-' . $fila[0]])) {
+        $formato .= '"' . $i . '":{"nombre":"' . $fila[0] . '", "existe":"true"},';
+    }else{
+        $formato .= '"' . $i . '":{"nombre":"' . $fila[0] . '", "existe":"false"},';
+    }
     $i++;
 }
 

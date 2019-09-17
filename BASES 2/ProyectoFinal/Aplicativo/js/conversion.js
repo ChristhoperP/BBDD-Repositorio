@@ -31,6 +31,7 @@ $.ajax({
                                 <option value="DATEPART(WEEK,${respuesta[i].Name}) ${respuesta[i].Name}_month">Semana</option>
                                 <option value="DATEPART(DAY,${respuesta[i].Name}) ${respuesta[i].Name}_day">Día</option>
                                 <option value="DATEPART(HOUR,${respuesta[i].Name}) ${respuesta[i].Name}_hour">Hora</option>
+                                <option value="${respuesta[i].Name}">Mantener</option>
                             </select>
                         </div>
                     </div>`

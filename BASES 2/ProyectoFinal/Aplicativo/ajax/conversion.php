@@ -5,7 +5,7 @@ switch ($_GET["opcion"]) {
     case '1':
         session_start();
         $arreglo = array();
-        $tipo_dato_numerico = array(-9 => "nvarchar", 1 => "Char", 93 => "datetime", 4 => "int", 6 => "float", 3 => "Money", -2 => "timestamp", 10 => "date",12 => "varchar");
+        $tipo_dato_numerico = array(-9 => "nvarchar", 1 => "Char", 93 => "datetime", 4 => "int", 6 => "float", 3 => "Money", -2 => "timestamp", 91 => "date",12 => "varchar");
 
 
         for ($i = 0; $i < sizeof($_SESSION["columnas-origen-selec"]); $i++) {
