@@ -16,6 +16,12 @@ INNER JOIN Pais PA ON PA.idPais=AE.Pais_idPais;
 SELECT CONVERT(DATE, fechaEmision) tiempoId,fechaEmision anio, fechaEmision mes,fechaEmision semana,fechaEmision dia, fechaEmision hora FROM Boleto
 GROUP BY fechaEmision;
 
+SELECT CONVERT(DATE, fechaEmision) tiempoId, DATEPART(YEAR, fechaEmision) anio, 
+DATEPART(MONTH, fechaEmision) mes, DATEPART(WEEK, fechaEmision) semana, 
+DATENAME(WEEKDAY, fechaEmision) dia,DATENAME(HOUR, fechaEmision) hora
+FROM Boleto
+GROUP BY fechaEmision;
+
 --Dimension empleado
 SELECT idEmpleado,P.pNombre,p.sNombre,P.pApellido,p.sApellido FROM EMPLEADO E
 INNER JOIN Persona P ON E.Persona_idPersona=P.idPersona;
@@ -24,7 +30,7 @@ INNER JOIN Persona P ON E.Persona_idPersona=P.idPersona;
 SELECT idTipoClase,descripcion FROM TipoClase;
 
 --Hechos Boletos
-SELECT EM.idEmpleado empleadoID, TC.idTipoClase claseID, PA_OR.idPais paisOrigenID, PA_DE.idPais paisDestinoID,
+SELECT BO.idBoleto,EM.idEmpleado empleadoID, TC.idTipoClase claseID, PA_OR.idPais paisOrigenID, PA_DE.idPais paisDestinoID,
  CONVERT(DATE, BO.fechaEmision) tiempoId, SUM(BO.totalPrecioBoleto) totalVentaBoleto FROM BOLETO BO
 INNER JOIN Empleado EM ON EM.idEmpleado=BO.Empleado_idEmpleado
 INNER JOIN TipoClase TC ON TC.idTipoClase=BO.TipoClase_idTipoClase
