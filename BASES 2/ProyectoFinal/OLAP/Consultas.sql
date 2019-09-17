@@ -16,12 +16,6 @@ INNER JOIN Pais PA ON PA.idPais=AE.Pais_idPais;
 SELECT CONVERT(DATE, fechaEmision) tiempoId,fechaEmision anio, fechaEmision mes,fechaEmision semana,fechaEmision dia, fechaEmision hora FROM Boleto
 GROUP BY fechaEmision;
 
-SELECT CONVERT(DATE, fechaEmision) tiempoId, DATEPART(YEAR, fechaEmision) anio, 
-DATEPART(MONTH, fechaEmision) mes, DATEPART(WEEK, fechaEmision) semana, 
-DATENAME(WEEKDAY, fechaEmision) dia,DATENAME(HOUR, fechaEmision) hora
-FROM Boleto
-GROUP BY fechaEmision;
-
 --Dimension empleado
 SELECT idEmpleado,P.pNombre,p.sNombre,P.pApellido,p.sApellido FROM EMPLEADO E
 INNER JOIN Persona P ON E.Persona_idPersona=P.idPersona;
@@ -43,5 +37,5 @@ INNER JOIN Puerta PU_DE ON PU_DE.idPuerta=VU.idPuertaDestino
 INNER JOIN Terminal TE_DE ON TE_DE.idTerminal=PU_DE.Terminal_idTerminal
 INNER JOIN Aeropuerto AE_DE ON AE_DE.idAeropuerto=TE_DE.Aeropuerto_idAeropuerto
 INNER JOIN Pais PA_DE ON PA_DE.idPais=AE_DE.Pais_idPais
-GROUP BY EM.idEmpleado, TC.idTipoClase, PA_OR.idPais, PA_DE.idPais, fechaEmision;
+GROUP BY BO.idBoleto,EM.idEmpleado, TC.idTipoClase, PA_OR.idPais, PA_DE.idPais, fechaEmision;
 

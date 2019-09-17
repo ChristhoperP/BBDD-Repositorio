@@ -122,7 +122,7 @@ CREATE TABLE dbo.Hechos_Boletos
 	claseID int not NULL,
 	paisOrigenID int not NULL,
 	paisDestinoID int not NULL,
-	tiempoID date NULL,
+	tiempoID date not NULL,
 	totalVentaBoleto float(53) NULL
 	)  ON [PRIMARY]
 GO
