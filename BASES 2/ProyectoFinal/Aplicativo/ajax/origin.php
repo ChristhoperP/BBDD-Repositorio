@@ -46,7 +46,7 @@ switch ($_POST["optradio"]) {
         $db = $_SESSION["oltp"];
         $conexion = new Conexion("localhost", $db);
 
-        $consulta = $_POST["consulta"];//En teoria solo cambia la consulta
+        $consulta = str_replace(";", "", $_POST["consulta"]);//En teoria solo cambia la consulta
 
         if ($resultado = $conexion->ejecutarConsulta($consulta)) {
             //guarda la consulta
